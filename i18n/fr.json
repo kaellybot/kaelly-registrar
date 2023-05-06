@@ -1,0 +1,171 @@
+{
+    "about": {
+        "description": "Donne des informations sur Kaelly et un moyen d'obtenir de l'aide"
+    },
+    "align": {
+        "description": "Gère l'annuaire des alignés",
+        "get": {
+            "name": "get",
+            "description": "Affiche l'annuaire des alignés d'une cité et/ou d'un ordre",
+            "city": {
+                "name": "city",
+                "description": "Cité du jeu"
+            },
+            "order": {
+                "name": "order",
+                "description": "Ordre du jeu"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Enregistre ton alignement dans l'annuaire du serveur spécifié",
+            "city": {
+                "name": "city",
+                "description": "Cité du jeu"
+            },
+            "order": {
+                "name": "order",
+                "description": "Ordre du jeu"
+            },
+            "level": {
+                "name": "level",
+                "description": "Niveau d'alignement compris entre 0 et 100. Indiques 0 pour être déréférencé"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+            }
+        }
+    },
+    "config": {
+        "description": "Permet de me configurer : serveur {{ .game.Name }}, l'envoi d'Almanax, de flux RSS ou de tweets",
+        "get": {
+            "name": "get",
+            "description": "Affiche ma configuration actuelle du serveur Discord"
+        },
+        "almanax": {
+            "name": "almanax",
+            "description": "Active ou désactive l'envoi de l'Almanax dans le salon",
+            "enabled": {
+                "name": "enabled",
+                "description": "Active l'envoi de l'Almanax dans un salon"
+            },
+            "language": {
+                "name": "language",
+                "description": "Si non renseigné, la langue du serveur sera utilisée"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Si non renseigné, le salon courant sera utilisé"
+            }
+        },
+        "rss": {
+            "name": "rss",
+            "description": "Active l'envoi de flux RSS dans un salon",
+            "enabled": {
+                "name": "enabled",
+                "description": "Active ou désactive l'envoi de flux RSS dans le salon"
+            },
+            "feedtype": {
+                "name": "feed",
+                "description": "Type du flux RSS, fourni par le site web officiel"
+            },
+            "language": {
+                "name": "language",
+                "description": "Si non renseigné, la langue du serveur sera utilisée"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Si non renseigné, le salon courant sera utilisé"
+            }
+        },
+        "server": {
+            "name": "server",
+            "description": "Lie le serveur Discord à un serveur {{ .game.Name }}",
+            "server": {
+                "name": "server",
+                "description": "Nom du serveur {{ .game.Name }}"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Le serveur {{ .game.Name }} lié au salon sera prioritaire à celui lié au serveur Discord"
+            }
+        },
+        "twitter": {
+            "name": "twitter",
+            "description": "Active l'envoi de tweets dans un salon",
+            "enabled": {
+                "name": "enabled",
+                "description": "Active ou désactive l'envoi de tweets dans le salon"
+            },
+            "language": {
+                "name": "language",
+                "description": "Si non renseigné, la langue du serveur sera utilisée"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Si non renseigné, le salon courant sera utilisé"
+            }
+        }
+    },
+    "job": {
+        "description": "Gère l'annuaire des artisans",
+        "get": {
+            "name": "get",
+            "description": "Affiche l'annuaire des artisans d'un métier",
+            "job": {
+                "name": "job",
+                "description": "Métier du jeu"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Enregistre ton métier dans l'annuaire du serveur spécifié",
+            "job": {
+                "name": "job",
+                "description": "Métier du jeu"
+            },
+            "level": {
+                "name": "level",
+                "description": "Niveau du métier compris entre 0 et 200. Indiques 0 pour être déréférencé"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+            }
+        }
+    },
+    "pos": {
+        "description": "Donne les positions de portail de dimension les plus récentes",
+        "dimension": {
+            "name": "dimension",
+            "description": "Nom de la dimension. Si non renseigné, toutes les dimensions sont remontées"
+        },
+        "server": {
+            "name": "server",
+            "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+        }
+    },
+    "locales": {
+        "FR": {
+            "name": "Français",
+            "emoji": ":flag_fr:"
+        },
+        "EN": {
+            "name": "Anglais",
+            "emoji": ":flag_gb:"
+        },
+        "ES": {
+            "name": "Espagnol",
+            "emoji": ":flag_es:"
+        }
+    }
+}
