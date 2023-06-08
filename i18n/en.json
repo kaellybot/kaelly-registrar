@@ -112,6 +112,13 @@
             }
         }
     },
+    "item": {
+        "description": "Gives items, mounts, pets, resources and pets",
+        "query": {
+            "name": "query",
+            "description": "Wanted item; the more precise the description, the more relevant the search!"
+        }
+    },
     "job": {
         "description": "Handles the craftsmen book",
         "get": {
@@ -166,6 +173,10 @@
        "ES": {
           "name": "Spanish",
           "emoji": ":flag_es:"
+       },
+       "DE": {
+           "name": "German",
+           "emoji": ":flag_de:"
        }
     }
 }

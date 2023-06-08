@@ -112,6 +112,13 @@
             }
         }
     },
+    "item": {
+        "description": "Donne les items, montures, familiers, ressources et consommables du jeu",
+        "query": {
+            "name": "query",
+            "description": "Item souhaité; plus la description est précise, plus la recherche est pertinente !"
+        }
+    },
     "job": {
         "description": "Gère l'annuaire des artisans",
         "get": {
@@ -166,6 +173,10 @@
         "ES": {
             "name": "Espagnol",
             "emoji": ":flag_es:"
+        },
+        "DE": {
+            "name": "Allemand",
+            "emoji": ":flag_de:"
         }
     }
 }
