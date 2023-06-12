@@ -161,6 +161,13 @@
             "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
         }
     },
+    "set": {
+        "description": "Gives sets",
+        "query": {
+            "name": "query",
+            "description": "Wanted set; the more precise the description, the more relevant the search!"
+        }
+    },
     "locales": {
        "FR": {
           "name": "French",

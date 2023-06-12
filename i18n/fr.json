@@ -161,6 +161,13 @@
             "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
         }
     },
+    "set": {
+        "description": "Donne les panoplies du jeu",
+        "query": {
+            "name": "query",
+            "description": "Panoplie souhaitée; plus la description est précise, plus la recherche est pertinente !"
+        }
+    },
     "locales": {
         "FR": {
             "name": "Français",
