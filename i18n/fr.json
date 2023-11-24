@@ -41,6 +41,33 @@
             }
         }
     },
+    "almanax": {
+        "description": "Donne l'almanax",
+        "day": {
+            "name": "day",
+            "description": "Donne l'almanax d'un jour donné",
+            "date": {
+                "name": "date",
+                "description": "Date au format JJ/MM/AAAA. Si non renseigné, la date du jour courant est utilisée à la place"
+            }
+        },
+        "resources": {
+            "name": "resources",
+            "description": "Donne les ressources nécessaires pour une période donnée",
+            "duration": {
+                "name": "duration",
+                "description": "Nombre de jours souhaité (30 jours maximum)"
+            }
+        },
+        "effects": {
+            "name": "effects",
+            "description": "Donne le prochain jour de l'almanax correspondant à l'effet choisi",
+            "effect": {
+                "name": "effect",
+                "description": "Effet de l'almanax souhaité"
+            }
+        }
+    },
     "config": {
         "description": "Permet de me configurer : serveur {{ .game.Name }}, l'envoi d'Almanax, de flux RSS ou de tweets",
         "get": {
