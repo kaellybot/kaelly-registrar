@@ -1,6 +1,6 @@
 {
     "about": {
-        "description": "Donne des informations sur Kaelly et un moyen d'obtenir de l'aide"
+        "description": "Donne des informations à mon propos et un moyen d'obtenir de l'aide"
     },
     "align": {
         "description": "Gère l'annuaire des alignés",
@@ -42,7 +42,7 @@
         }
     },
     "almanax": {
-        "description": "Donne l'almanax",
+        "description": "Donne l'almanax du jour",
         "day": {
             "name": "day",
             "description": "Donne l'almanax d'un jour donné",
