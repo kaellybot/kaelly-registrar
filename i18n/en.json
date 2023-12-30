@@ -139,6 +139,9 @@
             }
         }
     },
+    "help": {
+        "description": "Provides help for commands"
+    },
     "item": {
         "description": "Gives items, mounts, pets, resources and pets",
         "query": {

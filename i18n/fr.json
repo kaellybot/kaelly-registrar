@@ -139,6 +139,9 @@
             }
         }
     },
+    "help": {
+        "description": "Apporte de l'aide à l'usage des commandes"
+    },
     "item": {
         "description": "Donne les items, montures, familiers, ressources et consommables du jeu",
         "query": {
