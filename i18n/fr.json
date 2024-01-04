@@ -56,7 +56,7 @@
             "description": "Donne les ressources nécessaires pour une période donnée",
             "duration": {
                 "name": "duration",
-                "description": "Nombre de jours souhaité (30 jours maximum)"
+                "description": "Nombre de jours souhaité (30 jours maximum). Si non renseigné, la durée est de 7 jours"
             }
         },
         "effects": {
