@@ -1,6 +1,6 @@
 {
     "about": {
-        "description": "Gives information about me and a way to get help"
+        "description": "Provides information about me and a way to get help"
     },
     "align": {
         "description": "Handles the alignment book",
@@ -42,10 +42,10 @@
         }
     },
     "almanax": {
-        "description": "Gives the almanax",
+        "description": "Provides the almanax",
         "day": {
             "name": "day",
-            "description": "Gives the almanax of a specific day",
+            "description": "Provides the almanax of a specific day",
             "date": {
                 "name": "date",
                 "description": "Date in DD/MM/AAAA format. If not filled, the current day is used instead"
@@ -53,7 +53,7 @@
         },
         "resources": {
             "name": "resources",
-            "description": "Gives the resources needed for a specific period",
+            "description": "Provides the resources needed for a specific period",
             "duration": {
                 "name": "duration",
                 "description": "Number of days desired (30 days maximum). If not filled, the duration is set to 7 days"
@@ -61,7 +61,7 @@
         },
         "effects": {
             "name": "effects",
-            "description": "Gives the next almanax day with the desired effect",
+            "description": "Provides the next almanax day with the desired effect",
             "effect": {
                 "name": "effect",
                 "description": "Desired almanax effect"
@@ -69,14 +69,14 @@
         }
     },
     "config": {
-        "description": "Permits to configure me: {{ .game.Name }} server, Almanax, RSS feeds or tweets sendings",
+        "description": "Permits to configure me: {{ .game.Name }} server, Almanax, RSS feeds or tweets automatic sendings",
         "get": {
             "name": "get",
             "description": "Displays my current configuration to the Discord serveur"
         },
         "almanax": {
             "name": "almanax",
-            "description": "Enable Almanax sending in a channel",
+            "description": "Enable automatic Almanax sending in a channel",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables Almanax sending in the channel"
@@ -92,7 +92,7 @@
         },
         "rss": {
             "name": "rss",
-            "description": "Enables RSS feeds in a channel",
+            "description": "Enables automatic RSS feeds in a channel",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables RSS feeds sending in the channel"
@@ -124,7 +124,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Enables tweets sending in a channel",
+            "description": "Enables automatic tweets sending in a channel",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables tweets sending in the channel"
@@ -143,7 +143,7 @@
         "description": "Provides help for commands"
     },
     "item": {
-        "description": "Gives items, mounts, pets, resources and pets",
+        "description": "Provides items, mounts, pets, resources and pets",
         "query": {
             "name": "query",
             "description": "Wanted item; the more precise the description, the more relevant the search!"
@@ -181,7 +181,7 @@
         }
     },
     "pos": {
-        "description": "Gives the most recent dimension portal positions",
+        "description": "Provides the most recent dimension portal positions",
         "dimension": {
             "name": "dimension",
             "description": "Dimension name. If not filled, all dimensions are retrieved"
@@ -192,7 +192,7 @@
         }
     },
     "set": {
-        "description": "Gives sets",
+        "description": "Provides sets",
         "query": {
             "name": "query",
             "description": "Wanted set; the more precise the description, the more relevant the search!"

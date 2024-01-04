@@ -69,14 +69,14 @@
         }
     },
     "config": {
-        "description": "Permet de me configurer : serveur {{ .game.Name }}, l'envoi d'Almanax, de flux RSS ou de tweets",
+        "description": "Permet de me configurer : serveur {{ .game.Name }}, l'envoi automatique d'Almanax, de flux RSS ou de tweets",
         "get": {
             "name": "get",
             "description": "Affiche ma configuration actuelle du serveur Discord"
         },
         "almanax": {
             "name": "almanax",
-            "description": "Active ou désactive l'envoi de l'Almanax dans le salon",
+            "description": "Active ou désactive l'envoi automatique de l'Almanax dans le salon",
             "enabled": {
                 "name": "enabled",
                 "description": "Active l'envoi de l'Almanax dans un salon"
@@ -92,7 +92,7 @@
         },
         "rss": {
             "name": "rss",
-            "description": "Active l'envoi de flux RSS dans un salon",
+            "description": "Active l'envoi automatique de flux RSS dans un salon",
             "enabled": {
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de flux RSS dans le salon"
@@ -124,7 +124,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Active l'envoi de tweets dans un salon",
+            "description": "Active l'envoi automatique de tweets dans un salon",
             "enabled": {
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de tweets dans le salon"
