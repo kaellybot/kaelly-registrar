@@ -76,7 +76,7 @@
         },
         "almanax": {
             "name": "almanax",
-            "description": "Active ou désactive l'envoi automatique de l'Almanax dans le salon",
+            "description": "Active ou désactive l'envoi automatique de l'Almanax tous les jours à minuit",
             "enabled": {
                 "name": "enabled",
                 "description": "Active l'envoi de l'Almanax dans un salon"
@@ -92,7 +92,7 @@
         },
         "rss": {
             "name": "rss",
-            "description": "Active l'envoi automatique de flux RSS dans un salon",
+            "description": "Active l'envoi automatique de flux RSS",
             "enabled": {
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de flux RSS dans le salon"
@@ -124,7 +124,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Active l'envoi automatique de tweets dans un salon",
+            "description": "Active l'envoi automatique de tweets du compte {{ .game.Name }} officiel",
             "enabled": {
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de tweets dans le salon"
@@ -132,6 +132,22 @@
             "language": {
                 "name": "language",
                 "description": "Si non renseigné, la langue du serveur sera utilisée"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Si non renseigné, le salon courant sera utilisé"
+            }
+        },
+        "youtube": {
+            "name": "youtube",
+            "description": "Active l'envoi automatique des nouvelles vidéos d'un créateur Youtube",
+            "enabled": {
+                "name": "enabled",
+                "description": "Active ou désactive l'envoi des nouvelles vidéos dans le salon"
+            },
+            "videast": {
+                "name": "videast",
+                "description": "Nom du créateur Youtube souhaité"
             },
             "channel": {
                 "name": "channel",

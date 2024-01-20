@@ -76,7 +76,7 @@
         },
         "almanax": {
             "name": "almanax",
-            "description": "Enable automatic Almanax sending in a channel",
+            "description": "Enable automatic Almanax sending everyday at midnight",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables Almanax sending in the channel"
@@ -92,7 +92,7 @@
         },
         "rss": {
             "name": "rss",
-            "description": "Enables automatic RSS feeds in a channel",
+            "description": "Enables automatic RSS feeds",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables RSS feeds sending in the channel"
@@ -124,7 +124,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Enables automatic tweets sending in a channel",
+            "description": "Enables automatic sending of tweets from {{ .game.Name }} official account",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables tweets sending in the channel"
@@ -132,6 +132,22 @@
             "language": {
                 "name": "language",
                 "description": "If not filled, the server language is used instead"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "If not filled, the current channel is used instead"
+            }
+        },
+        "youtube": {
+            "name": "youtube",
+            "description": "Enables automatic sending of new videos of Youtube creator",
+            "enabled": {
+                "name": "enabled",
+                "description": "Enables or disables videos sending in the channel"
+            },
+            "videast": {
+                "name": "videast",
+                "description": "Youtube creator name desired"
             },
             "channel": {
                 "name": "channel",
