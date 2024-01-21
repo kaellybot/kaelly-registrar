@@ -122,6 +122,22 @@
                 "description": "Le serveur {{ .game.Name }} lié au salon sera prioritaire à celui lié au serveur Discord"
             }
         },
+        "twitch": {
+            "name": "twitch",
+            "description": "Active l'envoi automatique des démarrages live d'un streamer Twitch",
+            "enabled": {
+                "name": "enabled",
+                "description": "Active ou désactive l'envoi des démarrages live dans le salon"
+            },
+            "streamer": {
+                "name": "streamer",
+                "description": "Nom du streamer Twitch souhaité"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Si non renseigné, le salon courant sera utilisé"
+            }
+        },
         "twitter": {
             "name": "twitter",
             "description": "Active l'envoi automatique de tweets du compte {{ .game.Name }} officiel",
