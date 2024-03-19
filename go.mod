@@ -1,6 +1,6 @@
 module github.com/kaellybot/kaelly-registrar
 
-go 1.20
+go 1.22
 
 // replace github.com/kaellybot/kaelly-commands => ../Kaelly-commands
 
