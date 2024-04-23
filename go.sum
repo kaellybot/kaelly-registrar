@@ -140,8 +140,8 @@ github.com/ianlancetaylor/demangle v0.0.0-20181102032728-5e5cf60278f6/go.mod h1:
 github.com/ianlancetaylor/demangle v0.0.0-20200824232613-28f6c0f3b639/go.mod h1:aSSvb/t6k1mPoxDqO4vJh6VOCGPwU4O0C2/Eqndh1Sc=
 github.com/jstemmer/go-junit-report v0.0.0-20190106144839-af01ea7f8024/go.mod h1:6v2b51hI/fHJwM22ozAgKL4VKDeJcHhJFhtBdhmNjmU=
 github.com/jstemmer/go-junit-report v0.9.1/go.mod h1:Brl9GWCQeLvo8nXZwPNNblvFj/XSXhF0NWZEnDohbsk=
-github.com/kaellybot/kaelly-amqp v0.0.2-beta1 h1:kcei57EzPw7b5lIlJk+zrP7HPKyrVRtVFvjq05Q01Zk=
-github.com/kaellybot/kaelly-amqp v0.0.2-beta1/go.mod h1:ymW2PEel1b+Ro3Du667MBJmDr0tFYG7LtaqfbTA/5VU=
+github.com/kaellybot/kaelly-amqp v0.0.3-beta5 h1:sTQV1l8YAc8NIW1m/h8yuX18F/dRkx2tIggYOYSzgRo=
+github.com/kaellybot/kaelly-amqp v0.0.3-beta5/go.mod h1:ymW2PEel1b+Ro3Du667MBJmDr0tFYG7LtaqfbTA/5VU=
 github.com/kaellybot/kaelly-commands v0.0.5-beta5 h1:PtI10OS3B9jZiiOy9LW2VGAVsWGODKNj9U+4evsJgoE=
 github.com/kaellybot/kaelly-commands v0.0.5-beta5/go.mod h1:77s6LbCSKLQHcqhwLgcXwnkUQz945gLXI8T3mNMZJ9E=
 github.com/kaysoro/discordgo-i18n v1.0.2 h1:Qo56wDpyAOF4pnPiqTG5JSsSRn1PajjMmVpCZP6ryqg=
