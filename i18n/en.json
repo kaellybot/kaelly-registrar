@@ -48,7 +48,7 @@
             "description": "Provides the almanax of a specific day",
             "date": {
                 "name": "date",
-                "description": "Date in DD/MM/AAAA format. If not filled, the current day is used instead"
+                "description": "Date in DD/MM/YYYY format. If not filled, the current day is used instead"
             }
         },
         "resources": {
