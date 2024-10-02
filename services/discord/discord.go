@@ -37,6 +37,25 @@ func (service *Impl) RegisterCommands() error {
 	return nil
 }
 
+func (service *Impl) DeleteCommands() error {
+	commands, err := service.session.ApplicationCommands(viper.GetString(constants.ClientID), "")
+	if err != nil {
+		log.Error().Err(err).Msgf("Failed to retrieve registered commands, deletion stopped")
+		return err
+	}
+
+	for _, cmd := range commands {
+		err := service.session.ApplicationCommandDelete(viper.GetString(constants.ClientID), "", cmd.ID)
+		if err != nil {
+			log.Error().Err(err).Msgf("Failed to delete commands, deletion stopped")
+			return err
+		}
+		log.Info().Msgf("Commands successfully deleted!")
+	}
+
+	return nil
+}
+
 func (service *Impl) Shutdown() {
 	log.Info().Int(constants.LogShard, service.session.ShardID).Msgf("Closing Discord connections...")
 	err := service.session.Close()

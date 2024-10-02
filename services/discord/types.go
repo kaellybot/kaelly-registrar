@@ -6,6 +6,7 @@ import (
 
 type Service interface {
 	RegisterCommands() error
+	DeleteCommands() error
 	Shutdown()
 }
 
