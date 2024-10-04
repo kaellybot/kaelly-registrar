@@ -212,6 +212,13 @@
             }
         }
     },
+    "map": {
+        "description": "tire au hasard une carte compétitive",
+        "number": {
+            "name": "number",
+            "description": "Carte souhaitée (entre 1 et 50). Si non renseigné, la carte est tirée au hasard"
+        }
+    },
     "pos": {
         "description": "Donne les positions de portail de dimension les plus récentes",
         "dimension": {

@@ -212,6 +212,13 @@
             }
         }
     },
+    "map": {
+        "description": "Randomly draws a competitive map",
+        "number": {
+            "name": "number",
+            "description": "Desired map (between 1 and 50). If not filled, map is drawn at random"
+        }
+    },
     "pos": {
         "description": "Provides the most recent dimension portal positions",
         "dimension": {
