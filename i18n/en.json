@@ -33,7 +33,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Job level between 0 and 200. Indicate 0 to unregister"
+                "description": "Alignment level between 0 and 100. Indicate 0 to unregister"
             },
             "server": {
                 "name": "server",
