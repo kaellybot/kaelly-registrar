@@ -145,9 +145,9 @@
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de tweets dans le salon"
             },
-            "language": {
-                "name": "language",
-                "description": "Si non renseigné, la langue du serveur sera utilisée"
+            "account": {
+                "name": "account",
+                "description": "Nom du compte Twitter souhaité"
             },
             "channel": {
                 "name": "channel",

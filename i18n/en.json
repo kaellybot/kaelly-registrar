@@ -145,9 +145,9 @@
                 "name": "enabled",
                 "description": "Enables or disables tweets sending in the channel"
             },
-            "language": {
-                "name": "language",
-                "description": "If not filled, the server language is used instead"
+            "account": {
+                "name": "account",
+                "description": "Twitter account name desired"
             },
             "channel": {
                 "name": "channel",
