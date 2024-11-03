@@ -4,7 +4,6 @@ import (
 	"github.com/bwmarrin/discordgo"
 	commands "github.com/kaellybot/kaelly-commands"
 	"github.com/kaellybot/kaelly-registrar/models/constants"
-	"github.com/kaellybot/kaelly-registrar/utils/translators"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/viper"
 )
@@ -27,7 +26,7 @@ func (service *Impl) RegisterCommands() error {
 	}
 
 	_, err := service.session.ApplicationCommandBulkOverwrite(viper.GetString(constants.ClientID),
-		guildID, commands.GetCommands(translators.GetLocalChoices()))
+		guildID, commands.GetCommands())
 	if err != nil {
 		log.Error().Err(err).Msgf("Failed to create commands, registration stopped")
 		return err

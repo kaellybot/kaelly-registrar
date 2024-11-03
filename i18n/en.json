@@ -17,7 +17,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
+                "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
             }
         },
         "set": {
@@ -37,7 +37,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
+                "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
             }
         }
     },
@@ -69,7 +69,7 @@
         }
     },
     "config": {
-        "description": "Permits to configure me: {{ .game.Name }} server, Almanax, RSS feeds or tweets automatic sendings",
+        "description": "Permits to configure me: {{ .game }} server, Almanax, RSS feeds or tweets automatic sendings",
         "get": {
             "name": "get",
             "description": "Displays my current configuration to the Discord serveur"
@@ -80,10 +80,6 @@
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables Almanax sending in the channel"
-            },
-            "language": {
-                "name": "language",
-                "description": "If not filled, the server language is used instead"
             },
             "channel": {
                 "name": "channel",
@@ -101,10 +97,6 @@
                 "name": "feed",
                 "description": "Feed type desired, provided by the official website"
             },
-            "language": {
-                "name": "language",
-                "description": "If not filled, the server language is used instead"
-            },
             "channel": {
                 "name": "channel",
                 "description": "If not filled, the current channel is used instead"
@@ -112,14 +104,14 @@
         },
         "server": {
             "name": "server",
-            "description": "Links the Discord server to a {{ .game.Name }} server",
+            "description": "Links the Discord server to a {{ .game }} server",
             "server": {
                 "name": "server",
-                "description": "{{ .game.Name }} server game"
+                "description": "{{ .game }} server game"
             },
             "channel": {
                 "name": "channel",
-                "description": "{{ .game.Name }} server linked to the channel will be prior to the one linked to the Discord server"
+                "description": "{{ .game }} server linked to the channel will be prior to the one linked to the Discord server"
             }
         },
         "twitch": {
@@ -140,7 +132,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Enables automatic sending of tweets from {{ .game.Name }} official account",
+            "description": "Enables automatic sending of tweets from {{ .game }} official account",
             "enabled": {
                 "name": "enabled",
                 "description": "Enables or disables tweets sending in the channel"
@@ -192,7 +184,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
+                "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
             }
         },
         "set": {
@@ -208,7 +200,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
+                "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
             }
         }
     },
@@ -227,7 +219,7 @@
         },
         "server": {
             "name": "server",
-            "description": "{{ .game.Name }} Server name. If not filled, the guild server is used instead"
+            "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
         }
     },
     "set": {
@@ -236,23 +228,5 @@
             "name": "query",
             "description": "Wanted set; the more precise the description, the more relevant the search!"
         }
-    },
-    "locales": {
-       "FR": {
-          "name": "French",
-          "emoji": ":flag_fr:"
-       },
-       "EN": {
-          "name": "English",
-          "emoji": ":flag_gb:"
-       },
-       "ES": {
-          "name": "Spanish",
-          "emoji": ":flag_es:"
-       },
-       "DE": {
-           "name": "German",
-           "emoji": ":flag_de:"
-       }
     }
 }

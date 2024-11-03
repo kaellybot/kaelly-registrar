@@ -17,7 +17,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+                "description": "Nom du serveur {{ .game }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
             }
         },
         "set": {
@@ -37,7 +37,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+                "description": "Nom du serveur {{ .game }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
             }
         }
     },
@@ -69,7 +69,7 @@
         }
     },
     "config": {
-        "description": "Permet de me configurer : serveur {{ .game.Name }}, l'envoi automatique d'Almanax, de flux RSS ou de tweets",
+        "description": "Permet de me configurer : serveur {{ .game }}, l'envoi automatique d'Almanax, de flux RSS ou de tweets",
         "get": {
             "name": "get",
             "description": "Affiche ma configuration actuelle du serveur Discord"
@@ -80,10 +80,6 @@
             "enabled": {
                 "name": "enabled",
                 "description": "Active l'envoi de l'Almanax dans un salon"
-            },
-            "language": {
-                "name": "language",
-                "description": "Si non renseigné, la langue du serveur sera utilisée"
             },
             "channel": {
                 "name": "channel",
@@ -101,10 +97,6 @@
                 "name": "feed",
                 "description": "Type du flux RSS, fourni par le site web officiel"
             },
-            "language": {
-                "name": "language",
-                "description": "Si non renseigné, la langue du serveur sera utilisée"
-            },
             "channel": {
                 "name": "channel",
                 "description": "Si non renseigné, le salon courant sera utilisé"
@@ -112,14 +104,14 @@
         },
         "server": {
             "name": "server",
-            "description": "Lie le serveur Discord à un serveur {{ .game.Name }}",
+            "description": "Lie le serveur Discord à un serveur {{ .game }}",
             "server": {
                 "name": "server",
-                "description": "Nom du serveur {{ .game.Name }}"
+                "description": "Nom du serveur {{ .game }}"
             },
             "channel": {
                 "name": "channel",
-                "description": "Le serveur {{ .game.Name }} lié au salon sera prioritaire à celui lié au serveur Discord"
+                "description": "Le serveur {{ .game }} lié au salon sera prioritaire à celui lié au serveur Discord"
             }
         },
         "twitch": {
@@ -140,7 +132,7 @@
         },
         "twitter": {
             "name": "twitter",
-            "description": "Active l'envoi automatique de tweets du compte {{ .game.Name }} officiel",
+            "description": "Active l'envoi automatique de tweets du compte {{ .game }} officiel",
             "enabled": {
                 "name": "enabled",
                 "description": "Active ou désactive l'envoi de tweets dans le salon"
@@ -192,7 +184,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+                "description": "Nom du serveur {{ .game }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
             }
         },
         "set": {
@@ -208,7 +200,7 @@
             },
             "server": {
                 "name": "server",
-                "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+                "description": "Nom du serveur {{ .game }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
             }
         }
     },
@@ -227,7 +219,7 @@
         },
         "server": {
             "name": "server",
-            "description": "Nom du serveur {{ .game.Name }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
+            "description": "Nom du serveur {{ .game }}. Si non renseigné, le serveur de la guilde est utilisé à la place"
         }
     },
     "set": {
@@ -235,24 +227,6 @@
         "query": {
             "name": "query",
             "description": "Panoplie souhaitée; plus la description est précise, plus la recherche est pertinente !"
-        }
-    },
-    "locales": {
-        "FR": {
-            "name": "Français",
-            "emoji": ":flag_fr:"
-        },
-        "EN": {
-            "name": "Anglais",
-            "emoji": ":flag_gb:"
-        },
-        "ES": {
-            "name": "Espagnol",
-            "emoji": ":flag_es:"
-        },
-        "DE": {
-            "name": "Allemand",
-            "emoji": ":flag_de:"
         }
     }
 }
