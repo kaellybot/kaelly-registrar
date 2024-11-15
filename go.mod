@@ -5,10 +5,10 @@ go 1.22
 // replace github.com/kaellybot/kaelly-commands => ../Kaelly-commands
 
 require (
-	github.com/bwmarrin/discordgo v0.27.1
-	github.com/kaellybot/kaelly-amqp v0.0.6-beta17
+	github.com/bwmarrin/discordgo v0.28.1
+	github.com/kaellybot/kaelly-amqp v0.0.9-beta4
 	github.com/kaellybot/kaelly-commands v0.0.6-beta14
-	github.com/kaysoro/discordgo-i18n v1.0.2
+	github.com/kaysoro/discordgo-i18n v1.0.3
 	github.com/prometheus/client_golang v1.20.4
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/viper v1.19.0
@@ -19,6 +19,7 @@ require (
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
+	github.com/google/uuid v1.6.0 // indirect
 	github.com/gorilla/websocket v1.4.2 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
 	github.com/klauspost/compress v1.17.9 // indirect
