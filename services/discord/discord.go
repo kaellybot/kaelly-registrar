@@ -44,10 +44,10 @@ func (service *Impl) DeleteCommands() error {
 	}
 
 	for _, cmd := range commands {
-		err := service.session.ApplicationCommandDelete(viper.GetString(constants.ClientID), "", cmd.ID)
-		if err != nil {
-			log.Error().Err(err).Msgf("Failed to delete commands, deletion stopped")
-			return err
+		errDel := service.session.ApplicationCommandDelete(viper.GetString(constants.ClientID), "", cmd.ID)
+		if errDel != nil {
+			log.Error().Err(errDel).Msgf("Failed to delete commands, deletion stopped")
+			return errDel
 		}
 		log.Info().Msgf("Commands successfully deleted!")
 	}
