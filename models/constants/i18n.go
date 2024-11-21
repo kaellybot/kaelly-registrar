@@ -16,10 +16,11 @@ type Language struct {
 const (
 	i18nFolder = "i18n"
 
-	frenchFile  = "fr.json"
-	englishFile = "en.json"
-	spanishFile = "es.json"
-	germanFile  = "de.json"
+	frenchFile     = "fr.json"
+	englishFile    = "en.json"
+	spanishFile    = "es.json"
+	germanFile     = "de.json"
+	portugueseFile = "pt.json"
 
 	DefaultLocale = discordgo.EnglishGB
 )
@@ -50,6 +51,11 @@ func GetLanguages() []Language {
 			Locale:          discordgo.German,
 			TranslationFile: fmt.Sprintf("%s/%s", i18nFolder, germanFile),
 			AMQPLocale:      amqp.Language_DE,
+		},
+		{
+			Locale:          discordgo.PortugueseBR,
+			TranslationFile: fmt.Sprintf("%s/%s", i18nFolder, portugueseFile),
+			AMQPLocale:      amqp.Language_PT,
 		},
 	}
 }
