@@ -7,8 +7,8 @@ go 1.22
 require (
 	github.com/bwmarrin/discordgo v0.28.1
 	github.com/kaellybot/kaelly-amqp v0.0.9-beta9
-	github.com/kaellybot/kaelly-commands v0.0.6-beta14
-	github.com/kaysoro/discordgo-i18n v1.0.3
+	github.com/kaellybot/kaelly-commands v0.0.6-beta16
+	github.com/kaysoro/discordgo-i18n v1.0.4
 	github.com/rs/zerolog v1.33.0
 	github.com/spf13/viper v1.19.0
 )
