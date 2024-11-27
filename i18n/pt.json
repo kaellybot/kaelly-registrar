@@ -1,0 +1,232 @@
+{
+    "about": {
+        "description": "Fornece informações sobre mim e uma maneira de obter ajuda"
+    },
+    "align": {
+        "description": "Gerencia o livro de alinhamento",
+        "get": {
+            "name": "get",
+            "description": "Exibe o livro de alinhamento da cidade e/ou ordem especificada",
+            "city": {
+                "name": "city",
+                "description": "Cidade do jogo"
+            },
+            "order": {
+                "name": "order",
+                "description": "Ordem do jogo"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nome do servidor {{ .game }}. Se não preenchido, o servidor da guilda será usado"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Registra seu alinhamento no livro de alinhamento do servidor especificado",
+            "city": {
+                "name": "city",
+                "description": "Cidade do jogo"
+            },
+            "order": {
+                "name": "order",
+                "description": "Ordem do jogo"
+            },
+            "level": {
+                "name": "level",
+                "description": "Nível de alinhamento entre 0 e 100. Indique 0 para cancelar o registro"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nome do servidor {{ .game }}. Se não preenchido, o servidor da guilda será usado"
+            }
+        }
+    },
+    "almanax": {
+        "description": "Fornece o almanax",
+        "day": {
+            "name": "day",
+            "description": "Fornece o almanax de um dia específico",
+            "date": {
+                "name": "date",
+                "description": "Data no formato DD/MM/AAAA. Se não preenchido, o dia atual será usado"
+            }
+        },
+        "resources": {
+            "name": "resources",
+            "description": "Fornece os recursos necessários para um período específico",
+            "duration": {
+                "name": "duration",
+                "description": "Número de dias desejados (máximo de 30 dias). Se não preenchido, a duração será de 7 dias"
+            }
+        },
+        "effects": {
+            "name": "effects",
+            "description": "Fornece o próximo dia do almanax com o efeito desejado",
+            "effect": {
+                "name": "effect",
+                "description": "Efeito do almanax desejado"
+            }
+        }
+    },
+    "config": {
+        "description": "Permite configurar-me: servidor {{ .game }}, envio automático de Almanax, feeds RSS ou tweets",
+        "get": {
+            "name": "get",
+            "description": "Exibe minha configuração atual no servidor Discord"
+        },
+        "almanax": {
+            "name": "almanax",
+            "description": "Ativa ou desativa o envio automático do Almanax todos os dias à meia-noite",
+            "enabled": {
+                "name": "enabled",
+                "description": "Ativa ou desativa o envio do Almanax no canal"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Se não preenchido, o canal atual será usado"
+            }
+        },
+        "rss": {
+            "name": "rss",
+            "description": "Ativa o envio automático de feeds RSS",
+            "enabled": {
+                "name": "enabled",
+                "description": "Ativa ou desativa o envio de feeds RSS no canal"
+            },
+            "feedtype": {
+                "name": "feed",
+                "description": "Tipo de feed desejado, fornecido pelo site oficial"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Se não preenchido, o canal atual será usado"
+            }
+        },
+        "server": {
+            "name": "server",
+            "description": "Vincula o servidor Discord a um servidor {{ .game }}",
+            "server": {
+                "name": "server",
+                "description": "Servidor do jogo {{ .game }}"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "O servidor {{ .game }} vinculado ao canal terá prioridade sobre o vinculado ao servidor Discord"
+            }
+        },
+        "twitch": {
+            "name": "twitch",
+            "description": "Ativa o envio automático de notificações de lives de um streamer do Twitch",
+            "enabled": {
+                "name": "enabled",
+                "description": "Ativa ou desativa o envio de notificações de lives no canal"
+            },
+            "streamer": {
+                "name": "streamer",
+                "description": "Nome do streamer desejado no Twitch"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Se não preenchido, o canal atual será usado"
+            }
+        },
+        "twitter": {
+            "name": "twitter",
+            "description": "Ativa o envio automático de tweets da conta oficial {{ .game }}",
+            "enabled": {
+                "name": "enabled",
+                "description": "Ativa ou desativa o envio de tweets no canal"
+            },
+            "account": {
+                "name": "account",
+                "description": "Nome da conta desejada no Twitter"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Se não preenchido, o canal atual será usado"
+            }
+        },
+        "youtube": {
+            "name": "youtube",
+            "description": "Ativa o envio automático de novos vídeos de um criador do YouTube",
+            "enabled": {
+                "name": "enabled",
+                "description": "Ativa ou desativa o envio de novos vídeos no canal"
+            },
+            "videast": {
+                "name": "videast",
+                "description": "Nome do criador do YouTube desejado"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Se não preenchido, o canal atual será usado"
+            }
+        }
+    },
+    "help": {
+        "description": "Fornece ajuda para comandos"
+    },
+    "item": {
+        "description": "Fornece itens, montarias, mascotes, recursos e consumíveis",
+        "query": {
+            "name": "query",
+            "description": "Item desejado; quanto mais precisa a descrição, mais relevante será a pesquisa!"
+        }
+    },
+    "job": {
+        "description": "Gerencia o livro de artesãos",
+        "get": {
+            "name": "get",
+            "description": "Exibe o livro de artesãos de um trabalho específico",
+            "job": {
+                "name": "job",
+                "description": "Trabalho no jogo"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nome do servidor {{ .game }}. Se não preenchido, o servidor da guilda será usado"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Registra seu trabalho no livro de artesãos do servidor especificado",
+            "job": {
+                "name": "job",
+                "description": "Trabalho no jogo"
+            },
+            "level": {
+                "name": "level",
+                "description": "Nível do trabalho entre 0 e 200. Indique 0 para cancelar o registro"
+            },
+            "server": {
+                "name": "server",
+                "description": "Nome do servidor {{ .game }}. Se não preenchido, o servidor da guilda será usado"
+            }
+        }
+    },
+    "map": {
+        "description": "Desenha aleatoriamente um mapa competitivo",
+        "number": {
+            "name": "number",
+            "description": "Mapa desejado (entre 1 e 50). Se não preenchido, o mapa será sorteado aleatoriamente"
+        }
+    },
+    "pos": {
+        "description": "Fornece as posições mais recentes dos portais dimensionais",
+        "dimension": {
+            "name": "dimension",
+            "description": "Nome da dimensão. Se não preenchido, todas as dimensões serão recuperadas"
+        },
+        "server": {
+            "name": "server",
+            "description": "Nome do servidor {{ .game }}. Se não preenchido, o servidor da guilda será usado"
+        }
+    },
+    "set": {
+        "description": "Fornece conjuntos",
+        "query": {
+            "name": "query",
+            "description": "Conjunto desejado; quanto mais precisa a descrição, mais relevante será a pesquisa!"
+        }
+    }
+}

@@ -1,0 +1,232 @@
+{
+    "about": {
+        "description": "Bietet Informationen über mich und eine Möglichkeit, Hilfe zu erhalten"
+    },
+    "align": {
+        "description": "Verwaltet das Ausrichtungsbuch",
+        "get": {
+            "name": "get",
+            "description": "Zeigt das Ausrichtungsbuch der angegebenen Stadt und/oder Ordnung an",
+            "city": {
+                "name": "city",
+                "description": "Spielstadt"
+            },
+            "order": {
+                "name": "order",
+                "description": "Spielordnung"
+            },
+            "server": {
+                "name": "server",
+                "description": "{{ .game }}-Servername. Wenn nicht angegeben, wird stattdessen der Gildenserver verwendet"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Registriert deine Ausrichtung im Ausrichtungsbuch des angegebenen Servers",
+            "city": {
+                "name": "city",
+                "description": "Spielstadt"
+            },
+            "order": {
+                "name": "order",
+                "description": "Spielordnung"
+            },
+            "level": {
+                "name": "level",
+                "description": "Ausrichtungslevel zwischen 0 und 100. Gib 0 an, um die Registrierung aufzuheben"
+            },
+            "server": {
+                "name": "server",
+                "description": "{{ .game }}-Servername. Wenn nicht angegeben, wird stattdessen der Gildenserver verwendet"
+            }
+        }
+    },
+    "almanax": {
+        "description": "Stellt den Almanax bereit",
+        "day": {
+            "name": "day",
+            "description": "Stellt den Almanax eines bestimmten Tages bereit",
+            "date": {
+                "name": "date",
+                "description": "Datum im Format TT/MM/JJJJ. Wenn nicht ausgefüllt, wird stattdessen der aktuelle Tag verwendet"
+            }
+        },
+        "resources": {
+            "name": "resources",
+            "description": "Stellt die benötigten Ressourcen für einen bestimmten Zeitraum bereit",
+            "duration": {
+                "name": "duration",
+                "description": "Gewünschte Anzahl von Tagen (max. 30). Wenn nicht ausgefüllt, wird die Dauer auf 7 Tage festgelegt"
+            }
+        },
+        "effects": {
+            "name": "effects",
+            "description": "Stellt den nächsten Almanax-Tag mit dem gewünschten Effekt bereit",
+            "effect": {
+                "name": "effect",
+                "description": "Gewünschter Almanax-Effekt"
+            }
+        }
+    },
+    "config": {
+        "description": "Erlaubt es, mich zu konfigurieren: {{ .game }}-Server, Almanax, RSS-Feeds oder automatische Tweets",
+        "get": {
+            "name": "get",
+            "description": "Zeigt meine aktuelle Konfiguration auf dem Discord-Server an"
+        },
+        "almanax": {
+            "name": "almanax",
+            "description": "Aktiviert oder deaktiviert das automatische Senden des Almanax jeden Tag um Mitternacht",
+            "enabled": {
+                "name": "enabled",
+                "description": "Aktiviert oder deaktiviert das Senden des Almanax im Kanal"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
+            }
+        },
+        "rss": {
+            "name": "rss",
+            "description": "Aktiviert das automatische Senden von RSS-Feeds",
+            "enabled": {
+                "name": "enabled",
+                "description": "Aktiviert oder deaktiviert das Senden von RSS-Feeds im Kanal"
+            },
+            "feedtype": {
+                "name": "feed",
+                "description": "Gewünschter Feed-Typ, bereitgestellt von der offiziellen Website"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
+            }
+        },
+        "server": {
+            "name": "server",
+            "description": "Verknüpft den Discord-Server mit einem {{ .game }}-Server",
+            "server": {
+                "name": "server",
+                "description": "{{ .game }}-Spielserver"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Der gewählte {{ .game }} Server vom Kanal überschreibt den des Discord Servers."
+            }
+        },
+        "twitch": {
+            "name": "twitch",
+            "description": "Aktiviert das automatische Senden von Live-Benachrichtigungen eines Twitch-Streamers",
+            "enabled": {
+                "name": "enabled",
+                "description": "Aktiviert oder deaktiviert das Senden von Live-Benachrichtigungen im Kanal"
+            },
+            "streamer": {
+                "name": "streamer",
+                "description": "Gewünschter Twitch-Streamer-Name"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
+            }
+        },
+        "twitter": {
+            "name": "twitter",
+            "description": "Aktiviert das automatische Senden von Tweets vom offiziellen {{ .game }}-Account",
+            "enabled": {
+                "name": "enabled",
+                "description": "Aktiviert oder deaktiviert das Senden von Tweets im Kanal"
+            },
+            "account": {
+                "name": "account",
+                "description": "Gewünschter Twitter-Account-Name"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
+            }
+        },
+        "youtube": {
+            "name": "youtube",
+            "description": "Aktiviert das automatische Senden von neuen Videos eines YouTube-Kanals",
+            "enabled": {
+                "name": "enabled",
+                "description": "Aktiviert oder deaktiviert das Senden von neuen Videos im Kanal"
+            },
+            "videast": {
+                "name": "videast",
+                "description": "Gewünschter YouTube-Kanalname"
+            },
+            "channel": {
+                "name": "channel",
+                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
+            }
+        }
+    },
+    "help": {
+        "description": "Bietet Hilfe für Befehle"
+    },
+    "item": {
+        "description": "Bietet Gegenstände, Reittiere, Haustiere, Ressourcen und Verbrauchsgegenstände",
+        "query": {
+            "name": "query",
+            "description": "Gewünschter Gegenstand; je genauer die Beschreibung, desto relevanter die Suche!"
+        }
+    },
+    "job": {
+        "description": "Verwaltet das Handwerkerbuch",
+        "get": {
+            "name": "get",
+            "description": "Zeigt das Handwerkerbuch eines bestimmten Berufs an",
+            "job": {
+                "name": "job",
+                "description": "Beruf im Spiel"
+            },
+            "server": {
+                "name": "server",
+                "description": "{{ .game }}-Servername. Wenn nicht ausgefüllt, wird stattdessen der Gildenserver verwendet"
+            }
+        },
+        "set": {
+            "name": "set",
+            "description": "Registriert deinen Beruf im Handwerkerbuch des angegebenen Servers",
+            "job": {
+                "name": "job",
+                "description": "Beruf im Spiel"
+            },
+            "level": {
+                "name": "level",
+                "description": "Berufslevel zwischen 0 und 200. Gib 0 an, um die Registrierung aufzuheben"
+            },
+            "server": {
+                "name": "server",
+                "description": "{{ .game }}-Servername. Wenn nicht ausgefüllt, wird stattdessen der Gildenserver verwendet"
+            }
+        }
+    },
+    "map": {
+        "description": "Zieht zufällig eine Wettbewerbs-Karte",
+        "number": {
+            "name": "number",
+            "description": "Gewünschte Karte (zwischen 1 und 50). Wenn nicht ausgefüllt, wird die Karte zufällig gezogen"
+        }
+    },
+    "pos": {
+        "description": "Gibt die neuesten Dimensionenportal-Positionen an",
+        "dimension": {
+            "name": "dimension",
+            "description": "Name der Dimension. Wenn nicht ausgefüllt, werden alle Dimensionen abgerufen"
+        },
+        "server": {
+            "name": "server",
+            "description": "{{ .game }}-Servername. Wenn nicht ausgefüllt, wird stattdessen der Gildenserver verwendet"
+        }
+    },
+    "set": {
+        "description": "Gibt Sets an",
+        "query": {
+            "name": "query",
+            "description": "Gewünschtes Set; je genauer die Beschreibung, desto relevanter die Suche!"
+        }
+    }
+}
