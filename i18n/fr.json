@@ -114,22 +114,6 @@
                 "description": "Le serveur {{ .game }} lié au salon sera prioritaire à celui lié au serveur Discord"
             }
         },
-        "twitch": {
-            "name": "twitch",
-            "description": "Active l'envoi automatique des démarrages live d'un streamer Twitch",
-            "enabled": {
-                "name": "enabled",
-                "description": "Active ou désactive l'envoi des démarrages live dans le salon"
-            },
-            "streamer": {
-                "name": "streamer",
-                "description": "Nom du streamer Twitch souhaité"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Si non renseigné, le salon courant sera utilisé"
-            }
-        },
         "twitter": {
             "name": "twitter",
             "description": "Active l'envoi automatique de tweets du compte {{ .game }} officiel",
@@ -140,22 +124,6 @@
             "account": {
                 "name": "account",
                 "description": "Nom du compte Twitter souhaité"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Si non renseigné, le salon courant sera utilisé"
-            }
-        },
-        "youtube": {
-            "name": "youtube",
-            "description": "Active l'envoi automatique des nouvelles vidéos d'un créateur Youtube",
-            "enabled": {
-                "name": "enabled",
-                "description": "Active ou désactive l'envoi des nouvelles vidéos dans le salon"
-            },
-            "videast": {
-                "name": "videast",
-                "description": "Nom du créateur Youtube souhaité"
             },
             "channel": {
                 "name": "channel",

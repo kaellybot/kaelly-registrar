@@ -114,22 +114,6 @@
                 "description": "Der gewählte {{ .game }} Server vom Kanal überschreibt den des Discord Servers."
             }
         },
-        "twitch": {
-            "name": "twitch",
-            "description": "Aktiviert das automatische Senden von Live-Benachrichtigungen eines Twitch-Streamers",
-            "enabled": {
-                "name": "enabled",
-                "description": "Aktiviert oder deaktiviert das Senden von Live-Benachrichtigungen im Kanal"
-            },
-            "streamer": {
-                "name": "streamer",
-                "description": "Gewünschter Twitch-Streamer-Name"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
-            }
-        },
         "twitter": {
             "name": "twitter",
             "description": "Aktiviert das automatische Senden von Tweets vom offiziellen {{ .game }}-Account",
@@ -140,22 +124,6 @@
             "account": {
                 "name": "account",
                 "description": "Gewünschter Twitter-Account-Name"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Wenn nicht ausgefüllt, wird der aktuelle Kanal verwendet"
-            }
-        },
-        "youtube": {
-            "name": "youtube",
-            "description": "Aktiviert das automatische Senden von neuen Videos eines YouTube-Kanals",
-            "enabled": {
-                "name": "enabled",
-                "description": "Aktiviert oder deaktiviert das Senden von neuen Videos im Kanal"
-            },
-            "videast": {
-                "name": "videast",
-                "description": "Gewünschter YouTube-Kanalname"
             },
             "channel": {
                 "name": "channel",

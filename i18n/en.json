@@ -114,22 +114,6 @@
                 "description": "{{ .game }} server linked to the channel will be prior to the one linked to the Discord server"
             }
         },
-        "twitch": {
-            "name": "twitch",
-            "description": "Enables automatic sending of live starting from Twitch streamer",
-            "enabled": {
-                "name": "enabled",
-                "description": "Enables or disables live starting sending in the channel"
-            },
-            "streamer": {
-                "name": "streamer",
-                "description": "Twitch streamer name desired"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "If not filled, the current channel is used instead"
-            }
-        },
         "twitter": {
             "name": "twitter",
             "description": "Enables automatic sending of tweets from {{ .game }} official account",
@@ -140,22 +124,6 @@
             "account": {
                 "name": "account",
                 "description": "Twitter account name desired"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "If not filled, the current channel is used instead"
-            }
-        },
-        "youtube": {
-            "name": "youtube",
-            "description": "Enables automatic sending of new videos from Youtube creator",
-            "enabled": {
-                "name": "enabled",
-                "description": "Enables or disables videos sending in the channel"
-            },
-            "videast": {
-                "name": "videast",
-                "description": "Youtube creator name desired"
             },
             "channel": {
                 "name": "channel",

@@ -114,22 +114,6 @@
                 "description": "O servidor {{ .game }} vinculado ao canal terá prioridade sobre o vinculado ao servidor Discord"
             }
         },
-        "twitch": {
-            "name": "twitch",
-            "description": "Ativa o envio automático de notificações de lives de um streamer do Twitch",
-            "enabled": {
-                "name": "enabled",
-                "description": "Ativa ou desativa o envio de notificações de lives no canal"
-            },
-            "streamer": {
-                "name": "streamer",
-                "description": "Nome do streamer desejado no Twitch"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Se não preenchido, o canal atual será usado"
-            }
-        },
         "twitter": {
             "name": "twitter",
             "description": "Ativa o envio automático de tweets da conta oficial {{ .game }}",
@@ -140,22 +124,6 @@
             "account": {
                 "name": "account",
                 "description": "Nome da conta desejada no Twitter"
-            },
-            "channel": {
-                "name": "channel",
-                "description": "Se não preenchido, o canal atual será usado"
-            }
-        },
-        "youtube": {
-            "name": "youtube",
-            "description": "Ativa o envio automático de novos vídeos de um criador do YouTube",
-            "enabled": {
-                "name": "enabled",
-                "description": "Ativa ou desativa o envio de novos vídeos no canal"
-            },
-            "videast": {
-                "name": "videast",
-                "description": "Nome do criador do YouTube desejado"
             },
             "channel": {
                 "name": "channel",
