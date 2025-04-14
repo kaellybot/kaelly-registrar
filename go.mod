@@ -8,9 +8,10 @@ require (
 	github.com/bwmarrin/discordgo v0.28.1
 	github.com/kaellybot/kaelly-amqp v1.0.0
 	github.com/kaellybot/kaelly-commands v1.0.0
-	github.com/kaysoro/discordgo-i18n v1.0.4
-	github.com/rs/zerolog v1.33.0
+	github.com/kaysoro/discordgo-i18n v1.0.5-0.20250414204350-ec428c4cdbb7
+	github.com/rs/zerolog v1.34.0
 	github.com/spf13/viper v1.19.0
+	golang.org/x/crypto/x509roots/fallback v0.0.0-20250414110644-0091fc8e7c69
 )
 
 require (
