@@ -179,17 +179,6 @@
             "description": "Gewünschte Karte (zwischen 1 und 50). Wenn nicht ausgefüllt, wird die Karte zufällig gezogen"
         }
     },
-    "pos": {
-        "description": "Gibt die neuesten Dimensionenportal-Positionen an",
-        "dimension": {
-            "name": "dimension",
-            "description": "Name der Dimension. Wenn nicht ausgefüllt, werden alle Dimensionen abgerufen"
-        },
-        "server": {
-            "name": "server",
-            "description": "{{ .game }}-Servername. Wenn nicht ausgefüllt, wird stattdessen der Gildenserver verwendet"
-        }
-    },
     "set": {
         "description": "Gibt Sets an",
         "query": {

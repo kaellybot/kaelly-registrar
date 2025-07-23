@@ -179,17 +179,6 @@
             "description": "Mapa deseado (entre 1 y 50). Si no se completa, el mapa será seleccionado al azar"
         }
     },
-    "pos": {
-        "description": "Proporciona las posiciones más recientes de los portales dimensionales",
-        "dimension": {
-            "name": "dimension",
-            "description": "Nombre de la dimensión. Si no se completa, se recuperan todas las dimensiones"
-        },
-        "server": {
-            "name": "server",
-            "description": "Nombre del servidor {{ .game }}. Si no se completa, se usará el servidor de la guilda"
-        }
-    },
     "set": {
         "description": "Proporciona conjuntos",
         "query": {

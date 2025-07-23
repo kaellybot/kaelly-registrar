@@ -179,17 +179,6 @@
             "description": "Desired map (between 1 and 50). If not filled, map is drawn at random"
         }
     },
-    "pos": {
-        "description": "Provides the most recent dimension portal positions",
-        "dimension": {
-            "name": "dimension",
-            "description": "Dimension name. If not filled, all dimensions are retrieved"
-        },
-        "server": {
-            "name": "server",
-            "description": "{{ .game }} Server name. If not filled, the guild server is used instead"
-        }
-    },
     "set": {
         "description": "Provides sets",
         "query": {
