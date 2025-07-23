@@ -25,13 +25,16 @@ func (service *Impl) RegisterCommands() error {
 		guildID = constants.DevelopmentGuildID
 	}
 
-	_, err := service.session.ApplicationCommandBulkOverwrite(viper.GetString(constants.ClientID),
+	appCommands, err := service.session.ApplicationCommandBulkOverwrite(viper.GetString(constants.ClientID),
 		guildID, commands.GetCommands())
 	if err != nil {
 		log.Error().Err(err).Msgf("Failed to create commands, registration stopped")
 		return err
 	}
 	log.Info().Msgf("Commands successfully registered!")
+	for _, command := range appCommands {
+		log.Info().Msgf("%v (type %v): %v", command.Name, command.Type, command.ID)
+	}
 
 	return nil
 }
