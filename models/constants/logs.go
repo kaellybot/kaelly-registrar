@@ -12,6 +12,7 @@ const (
 	LogInteractionType = "interactionType"
 	LogShard           = "shard"
 	LogFileName        = "fileName"
+	LogGame            = "game"
 	LogLocale          = "locale"
 	LogPanic           = "panic"
 

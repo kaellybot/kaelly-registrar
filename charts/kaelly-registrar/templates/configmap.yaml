@@ -4,6 +4,7 @@ metadata:
   name: {{ .Release.Name }}-configmap
   namespace: {{ .Release.Namespace }}
 data:
+  GAME: "{{ .Values.game }}"
 {{- range .Values.envVars }}
   {{ .name }}: "{{ .value }}"
 {{- end }}

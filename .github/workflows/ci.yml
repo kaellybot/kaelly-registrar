@@ -111,6 +111,13 @@ jobs:
             helm upgrade --install ${{ github.event.repository.name }} charts/${{ github.event.repository.name }} \
               --namespace kaellybot \
               --set image.tag=${{ env.image_tag_name }} \
+              --set game=1 \
               --set secrets.CLIENT_ID=${{ secrets.CLIENT_ID }} \
               --set secrets.TOKEN="${{ secrets.TOKEN }}"
+            helm upgrade --install ${{ github.event.repository.name }}-retro charts/${{ github.event.repository.name }} \
+              --namespace kaellybot \
+              --set image.tag=${{ env.image_tag_name }} \
+              --set game=3 \
+              --set-string secrets.CLIENT_ID="${{ secrets.RETRO_CLIENT_ID }}" \
+              --set-string secrets.TOKEN="${{ secrets.RETRO_DISCORD_TOKEN }}"
   

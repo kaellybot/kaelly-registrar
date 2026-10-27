@@ -83,6 +83,10 @@ envVars:
   - name: PRODUCTION
     value: "false"
 
+# Game whose commands are registered: 1 (DOFUS), 2 (DOFUS Touch) or 3 (DOFUS Retro).
+# CLIENT_ID and TOKEN must be that game's application.
+game: 1
+
 secrets:
   CLIENT_ID: ""
   TOKEN: ""

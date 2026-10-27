@@ -11,6 +11,9 @@ const (
 	// Discord Bot Token.
 	Token = "TOKEN"
 
+	// Game whose commands are registered: 1 (DOFUS), 2 (DOFUS Touch) or 3 (DOFUS Retro).
+	Game = "GAME"
+
 	// Metric port.
 	MetricPort = "METRIC_PORT"
 
@@ -23,6 +26,7 @@ const (
 	// Default values.
 	defaultClientID   = ""
 	defaultToken      = ""
+	defaultGame       = 0 // No default game: each run must name the one it registers.
 	defaultShardID    = 0
 	defaultShardCount = 1
 	defaultMetricPort = 2112
@@ -34,6 +38,7 @@ func GetDefaultConfigValues() map[string]any {
 	return map[string]any{
 		ClientID:   defaultClientID,
 		Token:      defaultToken,
+		Game:       defaultGame,
 		MetricPort: defaultMetricPort,
 		LogLevel:   defaultLogLevel.String(),
 		Production: defaultProduction,
