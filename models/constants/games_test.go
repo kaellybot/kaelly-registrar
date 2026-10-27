@@ -1,10 +1,21 @@
 package constants
 
 import (
+	"fmt"
 	"testing"
+	"unicode/utf8"
 
+	"github.com/bwmarrin/discordgo"
 	amqp "github.com/kaellybot/kaelly-amqp"
 	commands "github.com/kaellybot/kaelly-commands"
+	"github.com/kaellybot/kaelly-registrar/models/i18n"
+	di18n "github.com/kaysoro/discordgo-i18n"
+)
+
+// Discord refuses the whole command set when a single description is out of bounds.
+const (
+	descriptionMinLength = 1
+	descriptionMaxLength = 100
 )
 
 func commandNames(game AnkamaGame) []string {
@@ -67,5 +78,53 @@ func TestGetGames_EachGameHasItsOwnApplication(t *testing.T) {
 			t.Errorf("%v and %v share application %v", other, game.AMQPGame, game.ApplicationID)
 		}
 		seen[game.ApplicationID] = game.AMQPGame
+	}
+}
+
+// Game names are inserted into the translations, so a description fitting for
+// DOFUS can overflow for DOFUS Touch or DOFUS Retro.
+func TestGetGames_DescriptionsFitDiscordLimits(t *testing.T) {
+	di18n.SetDefault(i18n.DefaultLocale)
+	for _, language := range i18n.GetLanguages() {
+		if err := di18n.LoadBundleFS(language.Locale, i18n.Folder, language.TranslationFile); err != nil {
+			t.Fatalf("loading %v translations: %v", language.Locale, err)
+		}
+	}
+
+	for _, game := range GetGames() {
+		t.Run(game.AMQPGame.String(), func(t *testing.T) {
+			for _, command := range game.GetCommands() {
+				if command.Type != discordgo.ChatApplicationCommand {
+					continue
+				}
+				checkDescriptions(t, "/"+command.Name, command.Description,
+					command.DescriptionLocalizations, command.Options)
+			}
+		})
+	}
+}
+
+func checkDescriptions(t *testing.T, path, description string,
+	localizations *map[discordgo.Locale]string, options []*discordgo.ApplicationCommandOption) {
+	t.Helper()
+	checkDescription(t, path, "default", description)
+	if localizations != nil {
+		for locale, localized := range *localizations {
+			checkDescription(t, path, string(locale), localized)
+		}
+	}
+
+	for _, option := range options {
+		checkDescriptions(t, fmt.Sprintf("%v %v", path, option.Name), option.Description,
+			&option.DescriptionLocalizations, option.Options)
+	}
+}
+
+func checkDescription(t *testing.T, path, locale, description string) {
+	t.Helper()
+	length := utf8.RuneCountInString(description)
+	if length < descriptionMinLength || length > descriptionMaxLength {
+		t.Errorf("%v (%v) description is %v characters long, want %v to %v: %q",
+			path, locale, length, descriptionMinLength, descriptionMaxLength, description)
 	}
 }

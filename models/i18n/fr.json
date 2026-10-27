@@ -69,7 +69,7 @@
         }
     },
     "config": {
-        "description": "Permet de me configurer : serveur {{ .game }}, l'envoi automatique d'Almanax, de flux RSS ou de tweets",
+        "description": "Permet de me configurer : serveur {{ .game }} et notifications automatiques",
         "get": {
             "name": "get",
             "description": "Affiche ma configuration actuelle du serveur Discord"

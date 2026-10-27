@@ -69,7 +69,7 @@
         }
     },
     "config": {
-        "description": "Permite configurarme: servidor {{ .game }}, envío automático de Almanax, feeds RSS o tweets",
+        "description": "Permite configurarme: servidor {{ .game }} y notificaciones automáticas",
         "get": {
             "name": "get",
             "description": "Muestra mi configuración actual en el servidor de Discord"
@@ -111,7 +111,7 @@
             },
             "channel": {
                 "name": "channel",
-                "description": "El servidor {{ .game }} vinculado al canal tendrá prioridad sobre el vinculado al servidor de Discord"
+                "description": "El servidor {{ .game }} vinculado al canal tendrá prioridad sobre el del servidor de Discord"
             }
         },
         "twitter": {
