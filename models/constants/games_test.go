@@ -2,6 +2,8 @@ package constants
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
 	"testing"
 	"unicode/utf8"
 
@@ -115,8 +117,12 @@ func checkDescriptions(t *testing.T, path, description string,
 	}
 
 	for _, option := range options {
-		checkDescriptions(t, fmt.Sprintf("%v %v", path, option.Name), option.Description,
+		optionPath := fmt.Sprintf("%v %v", path, option.Name)
+		checkDescriptions(t, optionPath, option.Description,
 			&option.DescriptionLocalizations, option.Options)
+		if option.Type == discordgo.ApplicationCommandOptionInteger && option.MaxValue != 0 {
+			checkMaxValue(t, optionPath, option)
+		}
 	}
 }
 
@@ -126,5 +132,26 @@ func checkDescription(t *testing.T, path, locale, description string) {
 	if length < descriptionMinLength || length > descriptionMaxLength {
 		t.Errorf("%v (%v) description is %v characters long, want %v to %v: %q",
 			path, locale, length, descriptionMinLength, descriptionMaxLength, description)
+	}
+
+	if strings.Contains(description, "<no value>") {
+		t.Errorf("%v (%v) description has an unfilled placeholder: %q", path, locale, description)
+	}
+}
+
+// The maximum differs between games, so a description stating it must follow the option's.
+func checkMaxValue(t *testing.T, path string, option *discordgo.ApplicationCommandOption) {
+	t.Helper()
+	maxValue := strconv.Itoa(int(option.MaxValue))
+	descriptions := map[string]string{"default": option.Description}
+	for locale, localized := range option.DescriptionLocalizations {
+		descriptions[string(locale)] = localized
+	}
+
+	for locale, description := range descriptions {
+		if !strings.Contains(description, maxValue) {
+			t.Errorf("%v (%v) description does not state the maximum %v: %q",
+				path, locale, maxValue, description)
+		}
 	}
 }

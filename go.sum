@@ -19,8 +19,8 @@ github.com/gorilla/websocket v1.5.3 h1:saDtZ6Pbx/0u+bgYQ3q96pZgCzfhKXGPqt7kZ72aN
 github.com/gorilla/websocket v1.5.3/go.mod h1:YR8l580nyteQvAITg2hZ9XVh4b55+EU/adAjf1fMHhE=
 github.com/kaellybot/kaelly-amqp v1.0.6 h1:jLLiII2aEdtRxMCtPWus2ZfoyGo+2cHCM7FpynKUSfM=
 github.com/kaellybot/kaelly-amqp v1.0.6/go.mod h1:yJ/42EskwJJb1hDBdVApJG7g4xRsDcfM+Qk8jtUIrI8=
-github.com/kaellybot/kaelly-commands v1.1.1 h1:uHrd2p2sp7cRrpbFy9qhsHM8vQGtAf+BoY1tB2gneMk=
-github.com/kaellybot/kaelly-commands v1.1.1/go.mod h1:xN6B5vlB2QjnjIjFXtUDPWmcgBhz9ojDOJkYMv2X050=
+github.com/kaellybot/kaelly-commands v1.1.2 h1:BYQs6JPe6RyfzEZ06jEiExlrp8p0JWkYh0vfFI5pX4M=
+github.com/kaellybot/kaelly-commands v1.1.2/go.mod h1:xN6B5vlB2QjnjIjFXtUDPWmcgBhz9ojDOJkYMv2X050=
 github.com/kaysoro/discordgo-i18n v1.0.5 h1:IbE2FYFgAQUhcqKa640t3h6vi+Qh9JK/+y396pkS1Yw=
 github.com/kaysoro/discordgo-i18n v1.0.5/go.mod h1:to8aVJgCoqJMwZUnhvF045tyaVxl115Ds72YDq3lyjs=
 github.com/kr/pretty v0.3.1 h1:flRD4NNwYAUpkphVc1HcthR4KEIFJ65n8Mw5qdRn3LE=

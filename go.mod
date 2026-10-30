@@ -7,7 +7,7 @@ go 1.27.0
 require (
 	github.com/bwmarrin/discordgo v0.29.0
 	github.com/kaellybot/kaelly-amqp v1.0.6
-	github.com/kaellybot/kaelly-commands v1.1.1
+	github.com/kaellybot/kaelly-commands v1.1.2
 	github.com/kaysoro/discordgo-i18n v1.0.5
 	github.com/rs/zerolog v1.35.1
 	github.com/spf13/viper v1.21.0

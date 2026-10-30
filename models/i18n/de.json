@@ -33,7 +33,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Ausrichtungslevel zwischen 0 und 100. Gib 0 an, um die Registrierung aufzuheben"
+                "description": "Ausrichtungslevel zwischen 0 und {{ .max }}. Gib 0 an, um die Registrierung aufzuheben"
             },
             "server": {
                 "name": "server",
@@ -164,7 +164,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Berufslevel zwischen 0 und 200. Gib 0 an, um die Registrierung aufzuheben"
+                "description": "Berufslevel zwischen 0 und {{ .max }}. Gib 0 an, um die Registrierung aufzuheben"
             },
             "server": {
                 "name": "server",

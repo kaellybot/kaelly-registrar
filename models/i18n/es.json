@@ -33,7 +33,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Nivel de alineación entre 0 y 100. Indica 0 para cancelar el registro"
+                "description": "Nivel de alineación entre 0 y {{ .max }}. Indica 0 para cancelar el registro"
             },
             "server": {
                 "name": "server",
@@ -164,7 +164,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Nivel del oficio entre 0 y 200. Indica 0 para cancelar el registro"
+                "description": "Nivel del oficio entre 0 y {{ .max }}. Indica 0 para cancelar el registro"
             },
             "server": {
                 "name": "server",

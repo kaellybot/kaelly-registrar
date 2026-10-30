@@ -33,7 +33,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Niveau d'alignement compris entre 0 et 100. Indiques 0 pour être déréférencé"
+                "description": "Niveau d'alignement compris entre 0 et {{ .max }}. Indiques 0 pour être déréférencé"
             },
             "server": {
                 "name": "server",
@@ -164,7 +164,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Niveau du métier compris entre 0 et 200. Indiques 0 pour être déréférencé"
+                "description": "Niveau du métier compris entre 0 et {{ .max }}. Indiques 0 pour être déréférencé"
             },
             "server": {
                 "name": "server",

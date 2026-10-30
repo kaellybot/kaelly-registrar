@@ -33,7 +33,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Nível de alinhamento entre 0 e 100. Indique 0 para cancelar o registro"
+                "description": "Nível de alinhamento entre 0 e {{ .max }}. Indique 0 para cancelar o registro"
             },
             "server": {
                 "name": "server",
@@ -164,7 +164,7 @@
             },
             "level": {
                 "name": "level",
-                "description": "Nível do trabalho entre 0 e 200. Indique 0 para cancelar o registro"
+                "description": "Nível do trabalho entre 0 e {{ .max }}. Indique 0 para cancelar o registro"
             },
             "server": {
                 "name": "server",
